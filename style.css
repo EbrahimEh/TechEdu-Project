@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 .header{
-background-color: lightgray;
+
 position: relative;
 }
 nav{
@@ -12,11 +12,12 @@ nav{
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #dddd;
+    background-color: rgb(157, 181, 207);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 50px;
+    z-index: 2;
 }
 .img-part{
     display: flex;
@@ -42,6 +43,11 @@ nav{
     list-style: none;
     display: inline-block;
     padding: 0 10px;
+    transition: 1s;
+}
+.navlinks ul li:hover{
+    background-color: #dddd;
+    padding: 5px 10px;
 }
 .navlinks ul li a{
     text-decoration: none;
@@ -65,6 +71,7 @@ nav{
 
 /* -----header-img part------- */
 .header-img{
+    
     background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('img/TechEdu.jpg');
     background-position: center;
     background-size: cover;
@@ -74,6 +81,7 @@ nav{
     
 }
 .hi-part{
+    z-index: 1;
     padding-top: 200px;
     position: relative;
 }
@@ -210,6 +218,8 @@ nav .faa{
     margin: auto;
     padding-top: 80px;
     text-align: center;
+    position: relative;
+    z-index: -1;
 }
 h1{
     font-size: 3rem;
@@ -440,7 +450,7 @@ margin-top: -35px;
 
 /* --------Community Experts----- */
 .community{
-    width: 60%;
+    width: 80%;
     margin: auto;
     text-align: center;
     padding-top: 80px;
@@ -448,7 +458,7 @@ margin-top: -35px;
 .community-col{
     background-color: rgba(155, 133, 133, 0.3);
     padding: 10px 15px;
-    flex-basis: 25%;
+    flex-basis: 20%;
     border-radius: 10px;
     box-shadow: 0 0 5px 0 black;
 
@@ -486,7 +496,7 @@ margin-top: -35px;
     padding-top: 50px;
     background-color: #333;
     color: #ddd;
-    margin: 10px;
+    
     
 }
 .footer .fp{
@@ -503,4 +513,46 @@ margin-top: -35px;
 .footer .fa{
     color: tomato;
 
+}
+
+
+
+.pro-footer{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #101C2F;
+}
+.p-footer{
+    width: 80%;
+    margin: auto;
+    color: #fff;
+}
+.fotter-col h3{
+    font-size: 1.3rem;
+}
+.fp{
+    padding-top: 20px;
+    color: #dddd;
+}
+.fp p{
+    margin: 30px 0;
+}
+
+.fotter-col .news{
+    display: flex;
+    margin-top: 40px;
+    
+}
+.news input{
+    width: 180px;
+
+}
+.news .ninput{
+    width: 100px;
+    margin-left: 10px;
+}
+.p-footer .copy{
+    padding: 30px 0;
+    color: #dddd;
 }
